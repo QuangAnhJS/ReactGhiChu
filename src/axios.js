@@ -32,7 +32,7 @@ const refreshToken = async () => {
 };
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost/", // URL cơ bản của API
+  baseURL: "https://ghichu.anhdev.online/", // URL cơ bản của API
   timeout: 10000, // Thời gian chờ tối đa cho mỗi yêu cầu HTTP (10 giây)
   headers: {
     "Content-Type": "application/json",
