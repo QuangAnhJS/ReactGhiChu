@@ -36,7 +36,7 @@ const axiosInstance = axios.create({
   timeout: 10000, // Thời gian chờ tối đa cho mỗi yêu cầu HTTP (10 giây)
   headers: {
     "Content-Type": "application/json",
-    Authorization: `Bearer ${getAccessToken()}` // Gọi getAccessToken() khi khai báo axiosInstance,
+    Authorization: `Bearer ${getAccessToken()}`,
     "Access-Control-Allow-Origin": "*",
     Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
   },
