@@ -37,11 +37,12 @@ const axiosInstance = axios.create({
   headers: {
     "Content-Type": "application/json",
     Authorization: `Bearer ${getAccessToken()}`,
-    "Access-Control-Allow-Origin": "*",
-    Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+    "Access-Control-Allow-Origin": "*", 
+    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
   },
   withCredentials: true,
 });
+
 
 // Interceptor cho response
 axiosInstance.interceptors.response.use(
